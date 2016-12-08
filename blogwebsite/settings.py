@@ -77,6 +77,16 @@ WSGI_APPLICATION = 'blogwebsite.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
+"""
+'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'forum',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST': '192.168.99.100',
+        'PORT': '4567',
+}
+"""
 
 DATABASES = {
     'default': {
@@ -84,6 +94,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
 
 
 # Password validation
